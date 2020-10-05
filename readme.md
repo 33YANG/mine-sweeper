@@ -1,6 +1,6 @@
 # Mine-Sweeper Project
 
-> This is A Web Program For Mine Sweeper Writed By JavaScript
+> This is A Web Game Program For Mine Sweeper Writed By JavaScript
 > 
 > Build with webpack
 
