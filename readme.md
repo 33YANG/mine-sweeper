@@ -1,22 +1,36 @@
 # Mine-Sweeper Project
 
 > This is A Web Program For Mine Sweeper Writed By JavaScript
+> 
+> Build with webpack
+
+# Preview
+
+![](overview.png)
 
 # Start
 
-```yarn```
+```bash
+yarn
+```
 
 ## Start at devolepment
 
-```yarn start```
+```bash
+yarn start
+```
 
 ## Build for production
 
-```yarn build```
+```bash
+yarn build
+```
 
 **Build use gzip**
 
-```yarn build-gzip```
+```bash
+yarn build-gzip
+```
 
 # License
 
