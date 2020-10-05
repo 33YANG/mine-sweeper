@@ -6,7 +6,7 @@
 
 # Preview
 
-![](overview.png)
+![Overview](./overview.png)
 
 # Start
 
