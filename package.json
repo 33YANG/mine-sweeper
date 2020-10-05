@@ -1,0 +1,51 @@
+{
+  "name": "mine-sweeper",
+  "description": "A Web Program For Mine Sweeper wWrited By JavaScript",
+  "version": "1.0.0",
+  "author": "33YANG",
+  "license": "MIT",
+  "private": true,
+  "browserslist": [
+    "> 1%",
+    "last 2 version",
+    "Firefox ESR",
+    "not dead"
+  ],
+  "prettier": {
+    "tabWidth": 2,
+    "useTabs": false,
+    "semi": false,
+    "singleQuote": true,
+    "printWidth": 160
+  },
+  "scripts": {
+    "start": "webpack-dev-server --config build/webpack.dev.js",
+    "build": "webpack --config build/webpack.prod.js --env",
+    "build-gzip": "webpack --config build/webpack.prod.js --env.gzip",
+    "analyse": "webpack --profile --json > stats.json"
+  },
+  "devDependencies": {
+    "@babel/core": "7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "autoprefixer": "9.8.6",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "compression-webpack-plugin": "^6.0.2",
+    "css-loader": "^4.3.0",
+    "file-loader": "^6.1.0",
+    "html-loader": "^1.3.0",
+    "html-webpack-plugin": "^4.4.1",
+    "less": "^3.12.2",
+    "less-loader": "^7.0.1",
+    "mini-css-extract-plugin": "^0.11.2",
+    "optimize-css-assets-webpack-plugin": "^5.0.4",
+    "postcss-loader": "3.6.0",
+    "style-loader": "^1.2.1",
+    "terser-webpack-plugin": "^4.2.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.8",
+    "webpack-merge": "^5.1.4"
+  },
+  "dependencies": {}
+}

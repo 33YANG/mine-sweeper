@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mine Sweeper</title>
+  <!-- <link rel="shortcut icon" href="./images/flag_icon.png" type="image/x-icon"> -->
+</head>
+<body>
+  <main id="mineSweeper">
+    <section class="title">
+      <div class="left-title">
+        <select name="diffcult" id="diffMode" class="diff">
+          <option value="Easy">Easy</option>
+          <option value="Meduim" selected>Meduim</option>
+          <option value="Diffcult">Diffcult</option>
+        </select>
+        <img id="refreshImg" src="./images/refresh_white_24dp.png" alt="Refresh" title="Refresh" height="26" style="cursor: pointer;">
+      </div>
+      <p class="content">Mine Sweeper</p>
+      <div class="icon">
+        <img src="./images/flag_icon.png" alt="Flag" title="Flag Number" height="28">
+        <span id="flagNum">0</span>
+        <img src="./images/clock_icon.png" alt="Clock" title="Timing" height="28">
+        <span id="clockNum">0</span>
+        <a href="http://www.google.com/search?q=%E6%89%AB%E9%9B%B7" target="_blank" style="margin-bottom: -6px; margin-left: 5px;">
+          <img src="./images/google_logo.png" alt="Google" title="Go Google Mine Sweeper" height="27" style="cursor: pointer;">
+        </a>
+      </div>
+    </section>
+    <section id="board"></section>
+    <section id="tips" class="tips">
+      <img src="./images/tutorial_desktop_dig.png" alt="Dig" height="150" class="tips-dig" id="tipsDig">
+      <img src="./images/tutorial_desktop_flag.png" alt="Flag" height="150" class="tips-flag" id="tipsFlag">
+    </section>
+  </main>
+</body>
+</html>

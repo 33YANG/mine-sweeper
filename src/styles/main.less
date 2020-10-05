@@ -1,0 +1,149 @@
+body {
+  background: #ccc;
+}
+
+#mineSweeper {
+  position: relative;
+  margin: 0 auto;
+  transform: matrix(1);
+
+  .title {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    height: 4rem;
+    color: #fff;
+    background: #4a752c;
+
+    .diff {
+      height: 1.5rem;
+      border-radius: 5px;
+      font-size: 15px;
+      margin-right: 0.5rem;
+    }
+
+    .left-title {
+      display: flex;
+      align-items: center;
+      margin: 0 1rem;
+    }
+
+    .icon {
+      display: flex;
+      align-items: center;
+      margin: 0 1rem;
+
+      img {
+        margin-right: 0.3rem;
+      }
+
+      span {
+        margin-right: 0.7rem;
+      }
+    }
+
+    .clock {
+      background: url(../images/clock_icon.png) no-repeat center / 90%;
+    }
+  }
+
+  .tips {
+    position: absolute;
+    pointer-events: none;
+    left: 38%;
+    top: 30%;
+    border-radius: 10%;
+    background-color: #445620b0;
+
+    .tips-flag {
+      display: inline;
+    }
+    .tips-dig {
+      display: none;
+    }
+  }
+}
+
+#board {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  background: #e2e1e185;
+
+  span {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border-radius: 1px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #1976d2;
+
+    &:nth-child(odd) {
+      background: #e5c29f;
+    }
+
+    &:nth-child(even) {
+      background: #d7b899;
+    }
+    &.odd-cover-color {
+      cursor: pointer;
+      background: #aad751;
+    }
+    &.odd-marked-mine {
+      cursor: pointer;
+      background-image: url('../images/flag_icon.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 80%;
+      background-color: #aad751;
+    }
+    &.odd-marked-uncover-mine {
+      background: center / 80% no-repeat url(../images/flag_icon.png), #e5c29f;
+    }
+    &.even-cover-color {
+      cursor: default;
+      background: #a2d149;
+    }
+    &.even-marked-mine {
+      cursor: pointer;
+      background: url('../images/flag_icon.png') no-repeat center / 80%, #a2d149;
+    }
+    &.even-marked-uncover-mine {
+      cursor: pointer;
+      background: url('../images/flag_icon.png') no-repeat center / 80%, #d7b899;
+    }
+    &.odd-cover-color:hover {
+      cursor: pointer;
+      background: #c0f15c;
+    }
+    &.even-cover-color:hover{
+      cursor: pointer;
+      background: #b6ec52;
+    }
+  }
+}
+
+.two {
+  color: #388e3c !important;
+}
+.three {
+  color: #7b1fa2 !important;
+}
+.foue {
+  color: #d464c2 !important;
+}
+.five {
+  color: #ff8f00 !important;
+}
+.mine {
+  color: #673ab7 !important;
+}
+.boom {
+  color: #673ab7 !important;
+  background: #e46060 !important;
+}
