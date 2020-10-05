@@ -6,7 +6,7 @@
 
 # Preview
 
-![Overview](https://raw.githubusercontent.com/33YANG/Mine-Sweeper/main/overview.png)
+![Overview](https://raw.githubusercontent.com/33YANG/Mine-Sweeper/main/overview.PNG)
 
 # Start
 
