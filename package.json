@@ -1,6 +1,6 @@
 {
-  "name": "mine-sweeper",
-  "description": "A Web Program For Mine Sweeper wWrited By JavaScript",
+  "name": "MineSweeper",
+  "description": "A Web Program For Mine Sweeper Writed By JavaScript",
   "version": "1.0.0",
   "author": "33YANG",
   "license": "MIT",
@@ -11,13 +11,6 @@
     "Firefox ESR",
     "not dead"
   ],
-  "prettier": {
-    "tabWidth": 2,
-    "useTabs": false,
-    "semi": false,
-    "singleQuote": true,
-    "printWidth": 160
-  },
   "scripts": {
     "start": "webpack-dev-server --config build/webpack.dev.js",
     "build": "webpack --config build/webpack.prod.js --env",
@@ -39,13 +32,16 @@
     "less-loader": "^7.0.1",
     "mini-css-extract-plugin": "^0.11.2",
     "optimize-css-assets-webpack-plugin": "^5.0.4",
-    "postcss-loader": "3.6.0",
+    "postcss-loader": "3.0.0",
     "style-loader": "^1.2.1",
     "terser-webpack-plugin": "^4.2.1",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.8",
+    "webpack-dev-server": "^3.11.0",
     "webpack-merge": "^5.1.4"
   },
-  "dependencies": {}
+  "dependencies": {
+    "echarts": "^5.0.0"
+  }
 }
+

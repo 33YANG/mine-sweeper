@@ -1,38 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mine Sweeper</title>
-  <!-- <link rel="shortcut icon" href="./images/flag_icon.png" type="image/x-icon"> -->
+  <!-- <link rel="shortcut icon" href="./icon/flag_icon.png" type="image/x-icon" /> -->
 </head>
+
 <body>
-  <main id="mineSweeper">
-    <section class="title">
-      <div class="left-title">
-        <select name="diffcult" id="diffMode" class="diff">
-          <option value="Easy">Easy</option>
-          <option value="Meduim" selected>Meduim</option>
-          <option value="Diffcult">Diffcult</option>
-        </select>
-        <img id="refreshImg" src="./images/refresh_white_24dp.png" alt="Refresh" title="Refresh" height="26" style="cursor: pointer;">
-      </div>
-      <p class="content">Mine Sweeper</p>
-      <div class="icon">
-        <img src="./images/flag_icon.png" alt="Flag" title="Flag Number" height="28">
-        <span id="flagNum">0</span>
-        <img src="./images/clock_icon.png" alt="Clock" title="Timing" height="28">
-        <span id="clockNum">0</span>
-        <a href="http://www.google.com/search?q=%E6%89%AB%E9%9B%B7" target="_blank" style="margin-bottom: -6px; margin-left: 5px;">
-          <img src="./images/google_logo.png" alt="Google" title="Go Google Mine Sweeper" height="27" style="cursor: pointer;">
-        </a>
+  <div class="layout">
+    <main id="mineSweeper">
+      <section class="title">
+        <div class="left-title">
+          <img id="refresh" src="./icon/refresh_white_24dp.png" alt="Refresh" title="Restart" height="26" style="cursor: pointer;">
+        </div>
+        <p class="content">Mine Sweeper .╮(✧ఠ 。ఠ✧)╭.</p>
+        <div class="icon">
+          <img src="./icon/flag_icon.png" alt="Flag" title="Flag Number" height="28">
+          <span id="flagNum">0</span>
+          <img src="./icon/clock_icon.png" alt="Clock" title="Timing" height="28">
+          <span id="clockNum">0</span>
+          <a href="https://www.google.com/search?q=%E6%89%AB%E9%9B%B7" target="_blank" class="go-google-link">
+            <img src="./icon/google-logo.png" alt="Google" title="Go Google Mine Sweeper" height="25">        
+          </a>
+        </div>
+      </section>
+      <section id="board"></section>
+      <section class="tips" id="tips">
+        <img src="./icon/tutorial_desktop_dig.png" alt="Dig" height="150" class="tips-dig" id="tipsDig">
+        <img src="./icon/tutorial_desktop_flag.png" alt="Flag" height="150" class="tips-flag" id="tipsFlag">
+      </section>
+    </main>
+    <section id="option" class="option">
+      <div class="title">Options</div>
+      <div class="content">
+        <form>
+          <div class="label">Difficulty:</div>
+          <div class="form">
+            <select name="diffcult" class="diff" id="diffMode">
+              <option value="Easy">Easy</option>
+              <option value="Medium" selected>Medium</option>
+              <option value="Diffcult">Diffcult</option>
+            </select>
+          </div>
+        </form>
+        <form>
+          <input type="checkbox" id="autoSweeper" value="autoSweeper">
+          <label for="autoSweeper">Auto Sweeper</label>
+        </form>
+        <form>
+          <input type="checkbox" id="aiDelay" value="aiDelay">
+          <label for="aiDelay">Ai Delay 1s</label>
+        </form>
+        <form>
+          <input type="checkbox" id="debugMode" value="debugMode">
+          <label for="debugMode">Debug Mode</label>
+        </form>
+        <form>
+          <input type="checkbox" id="loopSweeper" value="loopSweeper">
+          <label for="loopSweeper">Loop Sweeper</label>
+        </form>
+        <div id="loopInfo" class="loop-info" style="display: none;">
+          <div>Cost: <span id="costTime">0</span>s</div>
+          <div>Total Try: <span id="total">0</span></div>
+          <div>Win: <span id="win">0</span></div>
+          <div>Lose: <span id="lose">0</span></div>
+        </div>
+        <form>
+          <input type="checkbox" id="showChart" value="showChart">
+          <label for="showChart">Show Chart</label>
+        </form>        
       </div>
     </section>
-    <section id="board"></section>
-    <section id="tips" class="tips">
-      <img src="./images/tutorial_desktop_dig.png" alt="Dig" height="150" class="tips-dig" id="tipsDig">
-      <img src="./images/tutorial_desktop_flag.png" alt="Flag" height="150" class="tips-flag" id="tipsFlag">
+  </div>
+  <div class="abso-msg">
+    <section id="messageBox" class="message-box">
+      <div id="rightMsg" class="content right-bk" style="display: none;">
+        <span class="right-icon">√</span>
+        <span class="text">Congratulation, You Win!!!  (*^▽^*)  (p≧w≦q)</span>
+      </div>
+      <div id="errorMsg" class="content error-bk" style="display: none;">
+        <span class="error-icon">x</span>
+        <span class="text">BOOM !!!  o(╥﹏╥)o </span>
+      </div>
     </section>
-  </main>
+  </div>
+  <div id="charts" class="charts" style="display: none;"></div>
 </body>
+
 </html>
