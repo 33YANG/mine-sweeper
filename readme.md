@@ -7,17 +7,17 @@
 # Preview
 This project includes a basic web-side minesweeper game with three levels of difficulty.
 
-![MINE-BOOM.png](https://raw.githubusercontent.com/33YANG/Mine-Sweeper/main/preview/BOOM.png)
+![MINE-BOOM.PNG](https://raw.githubusercontent.com/33YANG/Mine-Sweeper/main/preview/BOOM.PNG)
 
 There is an automatic minesweeping mode (each step can be delayed by 1s), but automatic minesweeping is not absolutely correct, it is also a probability event. There is a debug mode in the automatic mode, which allows you to see clearly the operation of each step of the computer.
 
 There is also a cyclic automatic minesweeping mode, where the computer constantly tries to sweep mines to obtain the ratio between the success and failure of mine sweeping.
 
-![MINE-LOOP.png](https://raw.githubusercontent.com/33YANG/Mine-Sweeper/main/preview/LOOP.png)
+![MINE-LOOP.PNG](https://raw.githubusercontent.com/33YANG/Mine-Sweeper/main/preview/LOOP.PNG)
 
 The minesweeper probability chart of this automatic minesweeper program is provided.
 
-![MINE-CHART.png](https://raw.githubusercontent.com/33YANG/Mine-Sweeper/main/preview/CHART.png)
+![MINE-CHART.PNG](https://raw.githubusercontent.com/33YANG/Mine-Sweeper/main/preview/CHART.PNG)
 
 
 # Start
