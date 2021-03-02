@@ -9,9 +9,9 @@ This project includes a basic web-side **minesweeper game** with 3 levels of dif
 
 ![MINE-BOOM.PNG](https://raw.githubusercontent.com/33YANG/Mine-Sweeper/main/preview/BOOM.PNG)
 
-There is an automatic minesweeping mode (each step can be delayed by 1s), and a debug mode in the automatic mode, which allows you to see clearly the operation of each step of the computer.
+There is an **automatic minesweeping mode** (each step can be delayed by 1s), and a debug mode in the automatic mode, which allows you to see clearly the operation of each step of the computer.
 
-And a cyclic automatic minesweeping mode, where the computer constantly tries to sweep mines to obtain the ratio between the success and failure of mine sweeping.
+And a **cyclic automatic minesweeping mode**, where the computer constantly tries to sweep mines to obtain the ratio between the success and failure of mine sweeping.
 
 ![MINE-LOOP.PNG](https://raw.githubusercontent.com/33YANG/Mine-Sweeper/main/preview/LOOP.PNG)
 
