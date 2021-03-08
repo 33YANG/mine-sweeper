@@ -5,6 +5,9 @@
 > Build with webpack
 
 # Preview
+
+[https://33yang.github.io/mine-sweeper](https://33yang.github.io/mine-sweeper)
+
 This project includes a basic web-side **minesweeper game** with 3 levels of difficulty.
 
 ![MINE-BOOM.PNG](https://ftp.bmp.ovh/imgs/2021/03/8ecb21a89c20fb03.png)
